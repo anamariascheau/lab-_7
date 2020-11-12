@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css"href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="imagine.css">
+<title>catalog studenti</title>
+</head>
+<body>
+
+<h1>FIȘĂ DE LUCRU: INFORMATICĂ APLICATĂ </h1>
+<h2>Catalog al colegilor </h2>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="w3-round w3-border w3-padding w3-opacity w3-hover-sepia" src="Poza-page-001.jpg" width="450" height="250">
+  <div class="text"><a href="Fisa Lab6 negoita.html">Adrian Negoita</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="w3-round w3-border w3-padding w3-opacity w3-hover-sepia" src="IMG_4364.jpg"width="450" height="250">
+  <div class="text"><a href="fisa lab6 stefan razvan dumitru.html">Stefan Razvan Dumitru</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="w3-round w3-border w3-padding w3-opacity w3-hover-sepia" src="poza.jpeg"width="450" height="250">
+  <div class="text"><a href="fisa lab 6 MariusMuntean.html">Marius Muntean</a></li></a></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+
+
+</body>
+</html>

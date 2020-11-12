@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body 
+{
+  background-color: lightpink;
+}
+
+h1 
+{
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightgrey;
+  font-family:"verdana";
+}
+
+table 
+{
+border: 1px solid black;
+  margin: 25px 10px 75px 10px;
+  background-color: lightgrey;
+}
+
+img 
+{
+  margin: 25px 50px 100px 300px;
+  border-radius: 10px;
+  opacity: 0.8;
+  border: 3px solid black;
+}
+
+ul
+ {
+border: 1px solid black;
+  margin: 25px 10px 75px 10px;
+  background-color: lightgrey;
+}
+
+p 
+{
+  border: 1px solid black;
+  margin: 25px 10px 75px 10px;
+  background-color: grey;
+}
+
+  
+</style>
+<script>
+function schimbare()
+{
+document.getElementById("titlu").innerHTML= "Informatica aplicata";
+
+document.getElementById("nume").innerHTML= "Anamaria Scheau";
+
+document.getElementById("imagine").src = "IMG_0087.jpg";
+document.getElementById("imagine").style.opacity="0.9";
+document.getElementById("imagine").style.border="2px";
+
+document.getElementById("email").innerHTML= "anamaria.scheau25@gmail.com";
+
+document.getElementById("citat").innerHTML="Inteligenta plus caracterul este scopul adevaratei educatii";
+
+document.getElementById("tabel").innerHTML="Viitor";
+document.getElementById("realizari").innerHTML="Realizari";
+document.getElementById("link").innerHTML="";
+document.getElementById("tabel1").innerHTML="aprofundare studii";
+document.getElementById("tabel2").innerHTML="anul 1";
+document.getElementById("tabel3").innerHTML="aprofundare studii";
+document.getElementById("tabel4").innerHTML="anul 2";
+document.getElementById("tabel5").innerHTML="gasire a unui loc de munca";
+document.getElementById("tabel6").innerHTML="anul 3";
+document.getElementById("link1").innerHTML="";
+document.getElementById("link2").innerHTML="";
+document.getElementById("link3").innerHTML="";
+
+document.getElementById("hobby1").innerHTML="tenis";
+document.getElementById("hobby2").innerHTML="alergat";
+document.getElementById("hobby3").innerHTML="vizionare piese de teatru";
+
+document.body.style.backgroundColor = "Plum";
+
+var par = document.getElementTagName("p");
+var i;
+for(i-0;i<par.lenght;i++)
+{
+par[1].style.colour="violet"
+}
+
+}
+
+function arataVarsta()
+{
+var azi= new Date();
+var varstaMea;
+var anNasc=document.getElementById("varsta").innerHTML;
+var anCurent=azi.getFullYear();
+varstaMea= anCurent - parseInt(anNasc);
+document.getElementById("varsta").innerHTML = varstaMea;
+}
+
+</script>
+
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 id="titlu">FIȘĂ DE LUCRU: INFORMATICĂ APLICATĂ 
+</h1>
+<p id="nume">Scheau Anamaria</p>
+
+<img id="imagine" src="IMG_3607.jpg" width="450" height="250" > 
+
+<p onmouseover="arataVarsta()" id="varsta">2001</p>
+
+<p id="email">email:Scheau.Li.Anamaria@utcluj.didatec.ro</p>
+
+<p id="citat">”Educatia nu e cat de mult a i memorat sau cat stii. E capacitatea de a face diferenta intre ce stii si ce nu stii.”</p>
+
+<h2 id="tabel">TABEL DISCIPLINE</h2>
+
+<table style="width:100%">
+  <tr>
+    <th id="realizari">NUME DISCIPLINE</th>
+    <th>AN</th> 
+    <th id="link">LINK</th>
+  </tr>
+  <tr>
+    <td id="tabel1">Programarea calculatoarelor-Limbaje</td>
+    <td id="tabel2">ANUL 1</td>
+    <td id="link1"><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf">LINK</a></p></td>
+  </tr>
+  <tr>
+    <td id="tabel3">Procesare de semnal </td>
+    <td id="tabel4">ANUL 4</td>
+    <td id="link2"><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3154.20.pdf">LINK</a></p></td>
+  </tr>
+  <tr>
+    <td id="tabel5">Retele de calculatoare</td>
+    <td id="tabel6">ANUL 3</td>
+    <td id="link3"><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3143.pdf">LINK</a></p></td>
+  </tr>
+</table>
+
+<h2>Hobby-uri </h2>
+
+<ul>
+  <li id="hobby1">baschet</li>
+  <li id="hobby2">vizionare filme/seriale</li>
+  <li id="hobby3">citit</li>
+</ul>
+<button type="button" onclick= "schimbare()">Alta viata!</button>
+</body>
+</html>
